@@ -44,6 +44,16 @@
 		<script src="_next/static/chunks/app/%5blocale%5d/page-1c3dca9e1b1cac4c.js"
 				async=""></script>
 		<script src="_next/static/chunks/3168-d644397f36eb8152.js" async=""></script>
+		<script>
+			document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+				var menu = document.getElementById('mobile-menu');
+				if (menu.classList.contains('hidden')) {
+					menu.classList.remove('hidden');
+				} else {
+					menu.classList.add('hidden');
+				}
+			});
+			</script>
 		<script src="_next/static/chunks/3466-27c79e9d2c86affc.js" async=""></script>
 		<script src="_next/static/chunks/3017-a60636360ce80af9.js" async=""></script>
 		<script src="_next/static/chunks/9409-61b4357ab0b813af.js" async=""></script>
@@ -167,7 +177,7 @@
 								</a>
 							
 							<a class="text-neutral-600 dark:text-neutral-300 relative px-4 py-2"
-							   href="/zn/pricing.html">
+							   href="/zh/pricing.html">
 								<span class="relative z-20">定价</span>
 							</a>
 							<!--
@@ -198,28 +208,33 @@
 							</div>
 						</div>
 					</div>
+					
 					<div class="flex relative flex-col lg:hidden w-full justify-between items-center bg-transparent max-w-[calc(100vw-2rem)] mx-auto px-0 py-2 z-50"
-						 style="will-change:transform">
-						<div class="flex flex-row justify-between items-center w-full">
-							<a class="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
-							   href="index.html">
-								<div class="text-white text-xl leading-11  font-[&#x27;Readex Pro&#x27;] flex items-center">
-									<img class="w-[24px] h-[24px] mr-[16px]"
-										 src="logo.svg" />
-									<span class="bg-gradient-to-r from-[#A760F2] to-[#53B1FF] text-transparent bg-clip-text">Neuron</span>
-								</div>
-							</a>
-							<svg xmlns="http://www.w3.org/2000/svg" width="24"
-								 height="24" viewBox="0 0 24 24" fill="none"
-								 stroke="currentColor" stroke-width="2"
-								 stroke-linecap="round" stroke-linejoin="round"
-								 class="tabler-icon tabler-icon-menu-2 text-black dark:text-white">
-								<path d="M4 6l16 0"></path>
-								<path d="M4 12l16 0"></path>
-								<path d="M4 18l16 0"></path>
-							</svg>
-						</div>
-					</div>
+					style="will-change:transform">
+				   <div class="flex flex-row justify-between items-center w-full">
+					   <a class="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
+						  href="index.html">
+						   <div class="text-white text-xl leading-11  font-[&#x27;Readex Pro&#x27;] flex items-center">
+							   <img class="w-[24px] h-[24px] mr-[16px]"
+									src="logo.svg" />
+							   <span class="bg-gradient-to-r from-[#A760F2] to-[#53B1FF] text-transparent bg-clip-text">Neuron</span>
+						   </div>
+					   </a>
+					   <button id="mobile-menu-toggle" class="text-black dark:text-white">
+						   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+								class="tabler-icon tabler-icon-menu-2">
+							   <path d="M4 6l16 0"></path>
+							   <path d="M4 12l16 0"></path>
+							   <path d="M4 18l16 0"></path>
+						   </svg>
+					   </button>
+				   </div>
+				   <div id="mobile-menu" class="hidden w-full mt-2">
+					   <a class="block text-neutral-600 dark:text-neutral-300 py-2" href="http://47.107.114.193/college">AI助手</a>
+					   <a class="block text-neutral-600 dark:text-neutral-300 py-2" href="/zh/pricing.html">定价</a>
+				   </div>
+			   </div>
 				</div>
 				<div id="work" class=" max-w-6xl mx-auto antialiased mt-[10rem]">
 					<h2 class="font-bold text-5xl mb-5 text-center text-slate-700 capitalize">我们的
