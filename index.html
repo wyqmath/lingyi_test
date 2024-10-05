@@ -44,16 +44,7 @@
 		<script src="_next/static/chunks/app/%5blocale%5d/page-1c3dca9e1b1cac4c.js"
 				async=""></script>
 		<script src="_next/static/chunks/3168-d644397f36eb8152.js" async=""></script>
-		<script>
-			document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
-				var menu = document.getElementById('mobile-menu');
-				if (menu.classList.contains('hidden')) {
-					menu.classList.remove('hidden');
-				} else {
-					menu.classList.add('hidden');
-				}
-			});
-			</script>
+        <script src="_next/static/chunks/mobile-menu.js"></script>
 		<script src="_next/static/chunks/3466-27c79e9d2c86affc.js" async=""></script>
 		<script src="_next/static/chunks/3017-a60636360ce80af9.js" async=""></script>
 		<script src="_next/static/chunks/9409-61b4357ab0b813af.js" async=""></script>
@@ -220,7 +211,7 @@
 							   <span class="bg-gradient-to-r from-[#A760F2] to-[#53B1FF] text-transparent bg-clip-text">Neuron</span>
 						   </div>
 					   </a>
-					   <button id="mobile-menu-toggle" class="text-black dark:text-white">
+					   <button id="mobile-menu-toggle" class="text-black dark:text-white p-2 z-50 cursor-pointer">
 						   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 								class="tabler-icon tabler-icon-menu-2">
@@ -230,9 +221,9 @@
 						   </svg>
 					   </button>
 				   </div>
-				   <div id="mobile-menu" class="hidden w-full mt-2">
-					   <a class="block text-neutral-600 dark:text-neutral-300 py-2" href="http://47.107.114.193/college">AI助手</a>
-					   <a class="block text-neutral-600 dark:text-neutral-300 py-2" href="/zh/pricing.html">定价</a>
+				   <div id="mobile-menu" class="hidden absolute right-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+					   <a class="block text-neutral-600 dark:text-neutral-300 py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700" href="http://47.107.114.193/college">AI助手</a>
+					   <a class="block text-neutral-600 dark:text-neutral-300 py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700" href="/zh/pricing.html">定价</a>
 				   </div>
 			   </div>
 				</div>
